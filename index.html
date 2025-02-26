@@ -456,5 +456,47 @@
       </footer>
       <!-- #endregion Footer -->
     </div>
+<!-- #region Modal Window -->
+<div class="modal-overlay">
+  <div class="modal">
+<form class="overlay-form" name="order_form" autocomplete="off">
+  <button class="close-btn" type="reset">
+    <svg class="close-icon" width="8" height="8">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+<div class="form-set">
+  <p class="form-title">Leave your contacts and we will call you back</p>
+  <label class="form-label" for="user-nm">Name</label>
+  <div class="name-input">
+  <input class="form-input" type="text" name="user-name" pattern="[a-zA-zа-яА-ЯЇїІієЄ']{15}" id="user-nm" required autocomplete="off">
+  <svg class="name-input-icon" width="18" heigh="18">
+    <use href="./images/icons.svg#icon-person"></use>
+  </svg>
+  </div>
+  <label class="form-label" for="user-phn">Phone</label>
+  <div>
+  <input class="form-input" type="tel" name="user-phone" id="user-phn" required autocomplete="off">
+  </div>
+  <label class="form-label" for="user-eml">Email</label>
+  <div>
+  <input class="form-input" type="email" name="user-email" id="user-eml" required autocomplete="off">
+  </div>
+  <div>
+  <label class="form-label" for="user-cmnt">Comment</label>
+  <textarea class="form-input" name="user-comment" id="user-cmnt" rows="5" placeholder="Text input"></textarea>
+  </div>
+  <div>
+  <input type="checkbox" id="privacy-plc">
+    <label class="privacy-label" for="privacy-plc"><span class="custom-checked"><svg width="10" height="8">
+    <use href="./images/icons.svg#icon-Vector"></use>
+  </svg></span> accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+</div>
+</div>
+<button type="submit">Send</button>
+</form>
+  </div>
+</div>
+<!-- #endregion Modal Window -->
   </body>
 </html>
