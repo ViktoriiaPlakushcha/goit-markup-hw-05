@@ -457,43 +457,47 @@
       <!-- #endregion Footer -->
     </div>
 <!-- #region Modal Window -->
-<div class="modal-overlay">
+<div class="modal-overlay is-open">
   <div class="modal">
-<form class="overlay-form" name="order_form" autocomplete="off">
-  <button class="close-btn" type="reset">
+      <button class="close-btn" type="reset">
     <svg class="close-icon" width="8" height="8">
       <use href="./images/icons.svg#icon-close"></use>
     </svg>
   </button>
-<div class="form-set">
   <p class="form-title">Leave your contacts and we will call you back</p>
-  <label class="form-label" for="user-nm">Name</label>
-  <div class="name-input">
+<form class="overlay-form" name="order_form" autocomplete="off">
+<div class="form-set">
+    <label class="form-label" for="user-nm">Name</label>
+  <div class="form-input-cont">
   <input class="form-input" type="text" name="user-name" pattern="[a-zA-zа-яА-ЯЇїІієЄ']{15}" id="user-nm" required autocomplete="off">
-  <svg class="name-input-icon" width="18" heigh="18">
+  <svg class="input-icon" width="18" heigh="18">
     <use href="./images/icons.svg#icon-person"></use>
   </svg>
   </div>
   <label class="form-label" for="user-phn">Phone</label>
-  <div>
+  <div class="form-input-cont">
   <input class="form-input" type="tel" name="user-phone" id="user-phn" required autocomplete="off">
+  <svg class="input-icon" width="18" heigh="18">
+    <use href="./images/icons.svg#icon-phone"></use>
+  </svg>
   </div>
   <label class="form-label" for="user-eml">Email</label>
-  <div>
+  <div class="form-input-cont">
   <input class="form-input" type="email" name="user-email" id="user-eml" required autocomplete="off">
+  <svg class="input-icon" width="18" heigh="18">
+    <use href="./images/icons.svg#icon-email"></use>
+  </svg>
   </div>
-  <div>
-  <label class="form-label" for="user-cmnt">Comment</label>
-  <textarea class="form-input" name="user-comment" id="user-cmnt" rows="5" placeholder="Text input"></textarea>
-  </div>
-  <div>
-  <input type="checkbox" id="privacy-plc">
-    <label class="privacy-label" for="privacy-plc"><span class="custom-checked"><svg width="10" height="8">
+    <label class="form-label" for="user-cmnt">Comment</label>
+  <textarea class="input-comment" name="user-comment" id="user-cmnt" rows="5" placeholder="Text input"></textarea>
+  <div class="checkbox-cont">
+  <input class="checkbox-input visually-hidden" type="checkbox" id="privacy-plc">
+    <label class="privacy-label" for="privacy-plc"><span class="custom-checked"><svg class="check-icon" width="10" height="8">
     <use href="./images/icons.svg#icon-Vector"></use>
-  </svg></span> accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+  </svg></span>I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
 </div>
 </div>
-<button type="submit">Send</button>
+<button class="submit-btn" type="submit">Send</button>
 </form>
   </div>
 </div>
