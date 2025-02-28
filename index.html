@@ -439,98 +439,100 @@
               </li>
             </ul>
           </div>
-          <form class="ftr-form">
-            <label class="ftr-sbcr">
-              Subscribe
-              <input class="ftr-input" type="email" name="email" placeholder="E-mail" />
-            </label>
-            <button class="subdcribe-btn" type="submit">
-              Subscribe
-              <svg class="sbcr-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-paperplane"></use>
-              </svg>
-            </button>
-          </form>
+          <div class="ftr-subscribe-cont">
+            <p class="sbscr-text">Subscribe</p>
+            <form class="ftr-form">
+              <label class="ftr-sbcr">
+                <input class="ftr-input" type="email" name="email" placeholder="E-mail" />
+              </label>
+              <button class="subdcribe-btn" type="submit">
+                Subscribe
+                <svg class="sbcr-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-paperplane"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </footer>
       <!-- #endregion Footer -->
-    </div>
-    <!-- #region Modal Window -->
-    <div class="modal-overlay is-open">
-      <div class="modal">
-        <button class="close-btn" type="reset">
-          <svg class="close-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <p class="form-title">Leave your contacts and we will call you back</p>
-        <form class="overlay-form" name="order_form" autocomplete="off">
-          <div class="form-set">
-            <label class="form-label" for="user-nm">Name</label>
-            <div class="form-input-cont">
-              <input
-                class="form-input"
-                type="text"
-                name="user-name"
-                pattern="[a-zA-zа-яА-ЯЇїІієЄ']{15}"
-                id="user-nm"
-                required
-                autocomplete="off"
-              />
-              <svg class="input-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
+      <!-- #region Modal Window -->
+      <div class="modal-overlay is-open">
+        <div class="modal">
+          <button class="close-btn" type="button">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <p class="form-title">Leave your contacts and we will call you back</p>
+          <form class="overlay-form" name="order_form" autocomplete="off">
+            <div class="form-set">
+              <label class="form-label" for="user-name">Name</label>
+              <div class="form-input-cont">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="user-name"
+                  pattern="[a-zA-zа-яА-ЯЇїІієЄ']{15}"
+                  id="user-name"
+                  required
+                  autocomplete="off"
+                />
+                <svg class="input-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+              <label class="form-label" for="user-phn">Phone</label>
+              <div class="form-input-cont">
+                <input
+                  class="form-input"
+                  type="tel"
+                  name="user-phone"
+                  id="user-phn"
+                  required
+                  autocomplete="off"
+                />
+                <svg class="input-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+              <label class="form-label" for="user-eml">Email</label>
+              <div class="form-input-cont">
+                <input
+                  class="form-input"
+                  type="email"
+                  name="user-email"
+                  id="user-eml"
+                  required
+                  autocomplete="off"
+                />
+                <svg class="input-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+              <label class="form-label" for="user-cmnt">Comment</label>
+              <textarea
+                class="input-comment"
+                name="user-comment"
+                id="user-cmnt"
+                rows="5"
+                placeholder="Text input"
+              ></textarea>
+              <div class="checkbox-cont">
+                <input class="checkbox-input visually-hidden" type="checkbox" id="privacy-plc" />
+                <label class="privacy-label" for="privacy-plc"
+                  ><span class="custom-checked"
+                    ><svg class="check-icon" width="10" height="8">
+                      <use href="./images/icons.svg#icon-Vector"></use></svg></span
+                  >I accept the terms and conditions of the <a href="">Privacy Policy</a></label
+                >
+              </div>
             </div>
-            <label class="form-label" for="user-phn">Phone</label>
-            <div class="form-input-cont">
-              <input
-                class="form-input"
-                type="tel"
-                name="user-phone"
-                id="user-phn"
-                required
-                autocomplete="off"
-              />
-              <svg class="input-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </div>
-            <label class="form-label" for="user-eml">Email</label>
-            <div class="form-input-cont">
-              <input
-                class="form-input"
-                type="email"
-                name="user-email"
-                id="user-eml"
-                required
-                autocomplete="off"
-              />
-              <svg class="input-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-            </div>
-            <label class="form-label" for="user-cmnt">Comment</label>
-            <textarea
-              class="input-comment"
-              name="user-comment"
-              id="user-cmnt"
-              rows="5"
-              placeholder="Text input"
-            ></textarea>
-            <div class="checkbox-cont">
-              <input class="checkbox-input visually-hidden" type="checkbox" id="privacy-plc" />
-              <label class="privacy-label" for="privacy-plc"
-                ><span class="custom-checked"
-                  ><svg class="check-icon" width="10" height="8">
-                    <use href="./images/icons.svg#icon-Vector"></use></svg></span
-                >I accept the terms and conditions of the <a href="">Privacy Policy</a></label
-              >
-            </div>
-          </div>
-          <button class="submit-btn" type="submit">Send</button>
-        </form>
+            <button class="submit-btn" type="submit">Send</button>
+          </form>
+        </div>
       </div>
+      <!-- #endregion Modal Window -->
     </div>
-    <!-- #endregion Modal Window -->
   </body>
 </html>
