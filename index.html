@@ -504,23 +504,30 @@
               </svg>
             </div>
           </div>
-          <div class="modal-field">
-            <label class="form-label" for="user-cmnt">Comment</label>
+          <div class="modal-field-comment">
+            <label class="form-label" for="user-comment">Comment</label>
             <textarea
               class="input-comment"
               name="user-comment"
-              id="user-cmnt"
+              id="user-comment"
               rows="5"
               placeholder="Text input"
             ></textarea>
           </div>
           <div class="checkbox-cont">
-            <input class="checkbox-input visually-hidden" type="checkbox" id="privacy-plc" />
-            <label class="privacy-label" for="privacy-plc"
+            <input
+              class="checkbox-input visually-hidden"
+              name="user-privacy"
+              value="true"
+              type="checkbox"
+              id="user-privacy"
+            />
+            <label class="privacy-label" for="user-privacy"
               ><span class="custom-checked"
                 ><svg class="check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector"></use></svg></span
-              >I accept the terms and conditions of the <a href="">Privacy Policy</a></label
+              >I accept the terms and conditions of the
+              <a class="privacy-link" href="">Privacy Policy</a></label
             >
           </div>
           <button class="submit-btn" type="submit">Send</button>
