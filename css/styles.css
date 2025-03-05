@@ -404,14 +404,16 @@ margin-right: 120px;
     line-height: 1.50;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-bottom: 16px
+}
+.ftr-subscribe-cont {
+margin-left: 80px;
 }
 .ftr-form {
     display: flex;
     flex-direction: row;
     gap: 24px;
     align-items: flex-end;
-    margin-left: 80px;
+    
 }
 .ftr-input {
     border: 1px solid #FFFFFF;
